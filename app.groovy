@@ -35,4 +35,10 @@ class Application {
 		return "index"
 	}
 
+	@RequestMapping("/hello")
+	public String hello(Model model) {
+		model.addAttribute("message", "Hello from CF demo app!")
+		return "greeting"
+	}
+
 }
